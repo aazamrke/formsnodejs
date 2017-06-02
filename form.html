@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="formReg">
+    <head>
+        <title>Registration Form</title>
+      
+        <style type="text/css">
+            .abc{
+                background-color: red;
+            }
+
+        </style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head> 
+
+    <body>
+<div class="container abc">
+    <div class="form-group ">
+<h1>Registration</h1>
+        <div ng-controller="formCtrl">
+            <form name="userForm" action="" method="post" enctype="multipart/form-data">
+                
+                <input type="text" id="fname" name="fname" ng-model="fname" class="form-control" placeholder="First Name" required >
+                <input type="text" id="lname" name="lname" ng-model="lname" class="form-control" placeholder="Last Name" required >
+                <input type="email" id="email" name="email" ng-model="email" class="form-control" placeholder="Email" required >
+
+               <button type="submit" class="btn" ng-click="formsubmit(userForm.$valid)"  ng-disabled="userForm.$invalid">Submit </button>
+		
+            </form>
+           
+        </div>
+<script>
+
+var app = angular.module('formReg', []);
+
+app.controller("formCtrl", ['$scope', '$http', function($scope, $http) {
+
+
+
+
+
+    }]);
+</script>
+
+</div>
+</div>
+        
+    </body>
+
+</html>
