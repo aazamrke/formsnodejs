@@ -1,0 +1,23 @@
+{
+  "name": "formsnodejs",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to Pass Angular forms Data in Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aazamrke/formsnodejs.git"
+  },
+  "author": "aazamrke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aazamrke/formsnodejs/issues"
+  },
+  "homepage": "https://github.com/aazamrke/formsnodejs",
+  "dependencies": {
+    "formidable": "^1.1.1"
+  }
+}
